@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class logcacambiodecolor : MonoBehaviour
 {
-    public GameObject prefabcubo;
-    public GameObject prefabcapsula;
-    public GameObject prefabcirculo;
+    public GameObject prefabOG1;
+    
     public bool colornegro;
     public bool colorblanco;
     
@@ -14,26 +13,35 @@ public class logcacambiodecolor : MonoBehaviour
 
     void Start()
     {
+        colorblanco = true;
+        colornegro = false;
         
     }
 
     // Update is called once per frame
+
+
+    
+
+   
+    
+    
     void Update()
     {
+        colorblanco = !colorblanco;
+
         if (colorblanco)
         {
             Color c = new Color(1.0f, 1.0f, 1.0f);
-            prefabcubo.GetComponent<MeshRenderer>().material.color = c;
+            prefabOG1.GetComponent<MeshRenderer>().material.color = c;
         }
         else
         {
-            Color c = new Color(0.0f, 0.0f, 0.0f);
-            prefabcubo.GetComponent<MeshRenderer>().material.color = c;
+            Color c = new Color(0f, 0f, 0f);
+            prefabOG1.GetComponent<MeshRenderer>().material.color = c;
 
         }
-        
-        
-        
-       
+
+
     }
 }
