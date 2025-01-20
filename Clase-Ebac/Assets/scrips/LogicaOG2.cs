@@ -4,12 +4,12 @@ public class LogicaOG2 : MonoBehaviour
 {
     public GameObject prefabOG2;
 
-    public bool colornegro;
+    
     public bool colorblanco; // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         colorblanco = true;
-        colornegro = false;
+        
 
     }
 
