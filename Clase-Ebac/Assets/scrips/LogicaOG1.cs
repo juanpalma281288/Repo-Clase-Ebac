@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class logcacambiodecolor : MonoBehaviour
+public class LogicaOG1 : MonoBehaviour
 {
     public GameObject prefabOG1;
     
-    public bool colornegro;
+    
     public bool colorblanco;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -14,7 +14,7 @@ public class logcacambiodecolor : MonoBehaviour
     void Start()
     {
         colorblanco = true;
-        colornegro = false;
+        
         
     }
 
