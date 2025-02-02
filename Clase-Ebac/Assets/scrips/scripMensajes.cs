@@ -6,7 +6,7 @@ public class scripMensajes : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("hola mundo desde awake");
+       // Debug.Log("hola mundo desde awake");
 
     }
 
